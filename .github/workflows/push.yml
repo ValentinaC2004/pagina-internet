@@ -13,5 +13,5 @@ jobs:
     - name: Deploy
       uses: actions/github-pages-deploy-action@4.1.4
       with:
-        branch: gh-pages
+        branch: main
         folder: .
