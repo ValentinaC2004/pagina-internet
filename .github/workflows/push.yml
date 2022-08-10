@@ -1,0 +1,14 @@
+name: Deploy de la pagina
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy-page:
+  steps:
+
+  - name: Deploy
+    with:
+      branch: gh-pages
+      folder: .
