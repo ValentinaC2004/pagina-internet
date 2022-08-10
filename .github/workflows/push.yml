@@ -7,12 +7,11 @@ on:
 jobs:
   deploy-page:
   steps:
+    - name: Deploy
+      uses: 
 
-  - name: Valentina
-    uses:
-
-  - name: Deploy
-    uses: 
-    with:
-      branch: gh-pages
-      folder: .
+    - name: Deploy
+      uses: actions/github-pages-deploy-action@4.1.4
+      with:
+        branch: gh-pages
+        folder: .
